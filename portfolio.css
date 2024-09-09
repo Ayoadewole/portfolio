@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: rgb(255, 0, 0);
+  --white: #ffffff;
+}
+
+/* *::before, *::after {
+  box-sizing: inherit;
+} */
+  
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    background-color: var(--red);
+    color: white;
+    padding: 1.1rem;
+    font-size: 30px;
+    opacity: 80%;
+   }
+  
+  header a {
+      color: greenyellow;
+    }
+    
+  header a:visited {
+      color: sienna;
+    }
+    
+  header a:hover {
+      color: burlywood;
+    }
+  
+    .welcome-section {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 9rem;
+    font-size: 50px;
+    opacity: 70%;
+  }
+  
+  .welcome-section p {
+    width: 100%;
+    text-align: center;
+    color: red;
+    padding: 1rem;
+    font-size: 25px;
+    font-family: cursive;
+    font-style: italic;
+   }
+  
+  body {
+    margin: 0; /* Adjust this value based on the navbar height to prevent content from being hidden behind the navbar */
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+  }
+
+  .gallery {
+    margin-top: -35px;
+    background-color: rgb(80, 80, 123);
+    padding-bottom: 5%;
+  } 
+
+  div.img-container {
+  margin: 5px;
+  float: left;
+} 
+
+div.img-container .imag {
+  width: 100%;
+  }
+
+  .clearfix {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 9px;
+    margin: 0 22px;
+    text-align: center;
+
+  }
+  
+  h3 {
+    text-align: center;
+    padding: 6rem;
+    font-size: 35px;
+    text-decoration: none;
+    text-decoration: underline white solid 2px;
+  }
+
+  i:hover {
+    transform: scaleX(-1);
+  }
+
+  #show {
+    color: white;
+    font-size: 20px;
+    clear: left;
+    float: left;
+    position: relative;
+    background-color: rgb(80, 80, 123);
+  }
+  
+  #others {
+    text-align: center;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 13rem;
+  }
+
+  #one {
+    font-size: 70px;
+  }
+  
+  #two {
+    font-size: 25px;
+    font-style: italic;
+  }
+
+ #icons {
+  font-size: 22px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+footer {
+  font-size: 17px;
+  background-color: grey;
+  color: #fff;
+  margin: -35px 0 -20px 0;
+  padding: 30px 0;
+  }
+
+hr {
+  border: 2px solid red;
+  padding: 0 30px;
+}
+
+footer p {
+  text-align: left;
+  margin: 0 70px;
+  height: 25%
+}
+
+#copyright {
+  text-align: right;
+  height: 75%;
+  margin-right: 80px;
+}
+
+#last {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 10px;
+}
+
+#icons {
+  justify-content: space-between;
+  display: flex;
+}
+
+  /*
+
+img {
+  max-width: 33.33%;
+  padding: 10px;
+  float: left;
+}
+
+  .img-container {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+p {
+  padding: 10px;
+  clear: left;
+}
+
+#img-caption {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+  #gal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+  img {
+    padding: 5px;
+    max-width: 350px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    display: block;
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    float: left;
+  }  
+
+  .images {
+    display: inline-block;
+    height: 400px;
+    width: 33.33%;
+    padding: 10px;
+  }
+
+  .img-caption {
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   } */
+    
+  
+  /*
+  .others #navbar {
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+      text-decoration: overline red double .5px;
+  }
+  
+  .bottom-line {
+    margin-top: 25px;
+  }
+  
+  .others p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .last {
+    text-align: left;
+    width: 75%;
+  }
+  
+  .latter {
+    text-align: right;
+    width: 25%;
+  }
+  
+  footer {
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%
+    }
+    } */
